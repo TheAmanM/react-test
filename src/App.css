@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
+* {
+  padding: none;
+  margin: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body, p, h1 {
+  font-family: 'Nunito', 'Segoe UI';
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p, h1 {
+  padding: none;
+  margin: none;
+
+  padding-bottom: 2px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.text {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  width: 100vw;
 }
 
-.App-link {
-  color: #61dafb;
+.fab {
+  /* display: flex; */
+  width: 200;
+  height: 200;
+  /* color: aqua; */
+  background-color: dodgerblue;
+  /* align-items: flex-end; */
+  /* justify-content: end; */
+
+  border-radius: 50%;
+
+  margin-bottom: 20px;
+  margin-left: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+fabtext {
+/*   margin: 0px;
+  padding-bottom: 4px;
+*/
+  
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white; 
+}
+
+.button-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.button {
+  background-color: dodgerblue;
+  border: none;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+.button:active {
+  background-color: rgb(56, 154, 252);
+}
+
+.add {
+  margin: none;
+  /* margin-top: 2px; */
+  /* font-weight: w800; */
+  font-size: 2rem;
 }
